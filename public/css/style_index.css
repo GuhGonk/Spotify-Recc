@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(25, 156, 58);
+}
+
+/* Nav bar */
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {   /* Nav bar links */
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {     /* Change color on hover */
+    background-color: #111; 
+}
+
+/* Intro animation */
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+    /* display: none; */
+}
+
+.intro-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.intro-el{
+    position: relative;
+    display: inline-block;
+    /* bottom: -20px; */
+    opacity: 0;
+}
+
+.intro-el.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.intro-el.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.intro-image {
+    position: absolute;
+    /* top: 50%; */
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+}
+
+.intro-image.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.intro-image.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* Spinning Spotify Logo */
+.spotify-logo{
+    position: relative;
+    top: 20%;
+    left: 45%;
+    height: 300px;
+    width: 300px;
+}
+
+/* Input form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+label {
+    margin-right: 10px;
+}
