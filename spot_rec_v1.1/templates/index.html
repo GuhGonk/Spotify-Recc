@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="../public/css/style_index.css">
+</head>
+
+<body>
+    <script src="../public/javascript/script_index.js"></script>
+
+    <!-- Intro Animation -->
+    <div class="intro">
+        <h1 class="intro-header">
+            <!-- Each span is an individual animation element -->
+            <span class="intro-el">WEL</span><span class="intro-el">COME</span>
+            <img class="intro-image" src="https://i.scdn.co/image/ab6761610000e5eb69f4ff5144fe2e9f66ec6a6e">
+        </h1>
+    </div>
+    
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="content-container">
+        <img class="spotify-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotify_icon.svg/1982px-Spotify_icon.svg.png">
+        <!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/1878591893790334004/B4176E21DAA54F881A29B455496699908EC6D290/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="GIF" class="side-gif"> -->
+
+        <form id="inputForm" action="/process-data" method="post">
+            <label for="artist">Artist Name:</label>
+            <input type="text" id="artist" name="artist"><br><br>
+
+            <label for="album">Album Name:</label>
+            <input type="text" id="album" name="album"><br><br>
+
+            <label for="song">Song Name:</label>
+            <input type="text" id="song" name="song"><br><br>
+
+            <input id = "submitButton" type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
